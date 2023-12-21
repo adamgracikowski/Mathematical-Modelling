@@ -38,18 +38,36 @@ where $t \in [0, 8]$, and $x(t) = e^{-t} \cdot \sin(t)$. The initial conditions 
 <p align="center">
 <img src="https://github.com/adamgracikowski/Mathematical-Modelling/blob/master/Project1/Images/dsolve.png" alt="dsolve" width="500"/>
 </p>
+<p align="center">Solution to the system of ODEs.</p>
 
 ## About the Implementation:
 
+MATLAB was an imposed programming language for the implementation of the project. 
+
 ## More on the algorithms used:
+
+The following numerical methods were implemented:
+- Modified Euler's method:
+$$y_n = y_{n-1} + \frac{h}{2} \cdot \Big( f(t_{n-1}, y_{n-1}) + f(t_{n-1} + h, y_{n-1} + h \cdot f(t_{n-1}, y_{n-1})) \Big)$$
+
+- Three-step Adams-Bashforth method:
+$$y_n = y_{n-1} + \frac{h}{12} \cdot \Big( 5f(t_{n}, y_{n}) + 8f(t_{n-1}, y_{n-1}) - f(t_{n-2}, y_{n-2})) \Big)$$
+
+- Implicit Runge-Kutta method:
+$$y_n = y_{n-1} + h \cdot \sum_{i=1}^{3} w_if_i$$
+where:
+$$f_i = f \Big(t_{n-1} + c_kh, y_{n-1} + h \cdot \sum_{j=1}^{3} a_{i, j}f_j\Big)$$
+
+## Report:
+
+In the `Report` folder a file called `Report.pdf` can be found. It contains a further discussion on the topic of solving ordinary differential equations as well as some experiments with numerical stability of the methods mentioned above. 
+
+As the academic course was conducted in Polish, all the contents of the `Report.pdf` is sadly available only in Polish.
 
 <p align="center">
 <img src="https://github.com/adamgracikowski/Mathematical-Modelling/blob/master/Project1/Images/are.png" alt="are" width="500"/>
 </p>
-
-## Report:
-
-In the `Report` folder a file called `Report.pdf`, which contains a further discussion on the topic of solving ordinary differential equations, can be found. As the academic course was conducted in Polish, all the contents of the `Report.pdf` is sadly available only in Polish.
+<p align="center">Numerical instability resulting from too large integration step.</p>
 
 ## Author:
 
