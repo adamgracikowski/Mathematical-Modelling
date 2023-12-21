@@ -41,6 +41,8 @@ where $t \in [0, 8]$, and $x(t) = e^{-t} \cdot \sin(t)$. The initial conditions 
 
 ## Report:
 
+In the `Report` folder a file called `Report.pdf`, which contains a further discussion on the topic of solving ordinary differential equations, can be found. As the academic course was conducted in Polish, all the contents of the `Report.pdf` is sadly available only in Polish.
+
 ## Author:
 
 My GitHub: [@adamgracikowski](https://github.com/adamgracikowski)
