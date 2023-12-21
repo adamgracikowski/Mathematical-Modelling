@@ -4,7 +4,7 @@ function [are] = aggrelerr(t, yd, y)
 %
 % INPUT:
 % t         - wektor punktow czasowych
-% yd       - dokladne rozwiazanie y zwrocone przez dsolve
+% yd        - dokladne rozwiazanie y zwrocone przez dsolve
 % OUTPUT:
 % are1      - zagregowany blad wzgledny dla y
 
