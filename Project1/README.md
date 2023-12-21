@@ -35,9 +35,17 @@ $$
 
 where $t \in [0, 8]$, and $x(t) = e^{-t} \cdot \sin(t)$. The initial conditions of the differential equation are: $y_1(0) = 0$, $y_2(0) = 0$.
 
+<p align="center">
+<img src="https://github.com/adamgracikowski/Mathematical-Modelling/blob/master/Project1/Images/dsolve.png" alt="dsolve" width="500"/>
+</p>
+
 ## About the Implementation:
 
 ## More on the algorithms used:
+
+<p align="center">
+<img src="https://github.com/adamgracikowski/Mathematical-Modelling/blob/master/Project1/Images/are.png" alt="are" width="500"/>
+</p>
 
 ## Report:
 
