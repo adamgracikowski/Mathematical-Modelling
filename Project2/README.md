@@ -33,7 +33,7 @@ $$
 \end{equation}
 $$
 
-where $x$ is a populations size of the prey species, $y$ is a population size of the predator species and $t$ represents the time. The system has $6$ coefficients: $r_x$, $r_{xy}$, $r_{xx}$, $r_y$, $r_{yx}$, $r_{yy} in R$, which influence the mutual relationship between $x$ and $y$.
+where $x$ is a populations size of the prey species, $y$ is a population size of the predator species and $t$ represents the time. The system has $6$ coefficients: $r_x$, $r_{xy}$, $r_{xx}$, $r_y$, $r_{yx}$, $r_{yy} \in R$, which influence the mutual relationship between $x$ and $y$.
 The individual coefficients of the system can be interpreted as follows:
 - $r_x$ - the growth coefficient of population $x$. The higher the value of this coefficient, the faster the population $x$ will grow.
 - $r_y$ - the growth coefficient of population $y$. The higher the value of this coefficient, the faster the population $y$ will grow.
@@ -42,17 +42,36 @@ The individual coefficients of the system can be interpreted as follows:
 - $r_{xx}$ - the self-regulation coefficient of population $x$. This value determines how population $x$ regulates its own growth (intraspecific competition).
 - $r_{yy}$ - the self-regulation coefficient of population $y$. This value determines how population $y$ regulates its own growth (intraspecific competition).
 
+<p align="center">
+<img src="https://github.com/adamgracikowski/Mathematical-Modelling/blob/master/Project2/Images/plot01.png" alt="plot01" width="500"/>
+</p>
+<p align="center">Population size of species $x$ and $y$ with respect to time $t$.</p>
+
 ## About the Implementation:
 
-Matlab was an imposed programming language for implementing the project.
+Matlab was an imposed programming language for implementing the project. 
+It provides many useful functions for the estimation process, such as: `fminsearch`, `interp`, `ode45`, `dsolve`, `solve`, `roots` etc.
 
 ## More on the algorithms used:
 
-In the process of estimation various numerical methods for solving systems of differential equations were implemented.
+In the process of estimation, the following numerical methods for solving systems of differential equations were implemented:
+- Explicit Euler's method
+- Implicit Euler's method
+- Three-step Adams-Bashforth method
 
 ## Report:
 
 In the `Report` folder a file called `Report.pdf` can be found. It contains a very detailed descritption of the methodology employed during the process of estimating the parameters of the Predator-Prey model, as well as all the plots and conclusions, which arosen from the progress at the project development.
+
+<p align="center">
+<img src="https://github.com/adamgracikowski/Mathematical-Modelling/blob/master/Project2/Images/plot02.png" alt="plot02" width="500"/>
+</p>
+<p align="center">Estimation of population size of species $x$.</p>
+
+<p align="center">
+<img src="https://github.com/adamgracikowski/Mathematical-Modelling/blob/master/Project2/Images/plot03.png" alt="plot03" width="500"/>
+</p>
+<p align="center">Estimation of population size of species $y$.</p>
 
 ## Author:
 
