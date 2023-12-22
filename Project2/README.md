@@ -61,7 +61,7 @@ In the process of estimation, the following numerical methods for solving system
 
 ## Report:
 
-In the `Report` folder a file called `Report.pdf` can be found. It contains a very detailed descritption of the methodology employed during the process of estimating the parameters of the Predator-Prey model, as well as all the plots and conclusions, which arosen from the progress at the project development.
+In the `Report` folder a file called `Report.pdf` can be found. It contains a very detailed descritption of the methodology, which was employed during the process of estimating the parameters of the Predator-Prey model, as well as all the plots and conclusions, which arosen from the progress at the project development.
 
 <p align="center">
 <img src="https://github.com/adamgracikowski/Mathematical-Modelling/blob/master/Project2/Images/plot02.png" alt="plot02" width="500"/>
